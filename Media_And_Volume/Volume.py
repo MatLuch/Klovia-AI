@@ -9,7 +9,6 @@ def Set_Volume(input):
 
 def Change_Volume(input): 
     CurrVolume = vol.GetMasterVolumeLevelScalar() * 100
-
     NewPercent = max(0, min(100, CurrVolume + input))
     
     vol.SetMasterVolumeLevelScalar(NewPercent / 100.0, None)
