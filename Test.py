@@ -1,5 +1,5 @@
 from Media_And_Volume.Volume import *
-from Media_And_Volume.Media_Controls import * 
+from Media_And_Volume.MediaControls import * 
 
 x = "hello"
 
