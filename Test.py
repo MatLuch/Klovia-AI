@@ -6,4 +6,4 @@ x = "hello"
 while x != "-1": 
     x = input("chose how to set your volume: ")
 
-    Media_Control(x)
+    Decrease_Volume(x)
