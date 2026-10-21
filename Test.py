@@ -1,9 +1,18 @@
+from AI_Training.TestRun2 import ModelAnswer
+from Media_And_Volume.MediaControls import *
 from Media_And_Volume.Volume import *
-from Media_And_Volume.MediaControls import * 
 
-x = "hello"
+print("start entering inputs")
 
-while x != "-1": 
-    x = input("chose how to set your volume: ")
-
-    Decrease_Volume(x)
+while True:
+  text = input("Enter command: ")
+  
+  # Get the answer from your trained model function
+  response = ModelAnswer(text)
+  
+  if response == "exit":
+      print("Exiting")
+      break
+      
+  print(f"Predicted command: {response}\n")
+  

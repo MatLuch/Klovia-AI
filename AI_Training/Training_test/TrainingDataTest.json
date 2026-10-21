@@ -28,7 +28,7 @@
         "please resume the track",
         "stop dont stop my music"
     ],
-    "volume Up":[
+    "volumeUp":[
         "turn up the volume",
         "turn the volume up",
         "make it louder",
@@ -45,7 +45,7 @@
         "turn up the audio",
         "bump up the volume"
     ],
-    "Volume Down":[
+    "volumeDown":[
         "turn down the volume",
         "turn the volume down",
         "make it quieter",
