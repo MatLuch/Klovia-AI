@@ -1,5 +1,5 @@
 {
-    "pause": [
+    "PlayPause": [
         "pause",
         "pause the music",
         "pause this song",
@@ -11,9 +11,14 @@
         "pause the audio",
         "stop playback",
         "pause it for a moment",
-        "please stop the track"
-    ],
-    "resume": [
+        "please stop the track",
+        "hold on",
+        "hold up a second",
+        "mute the music",
+        "freeze the track",
+        "give me a break",
+        "stop for a second",
+        "halt the music",
         "resume",
         "unpause",
         "play",
@@ -26,9 +31,15 @@
         "resume playback",
         "start playing again",
         "please resume the track",
-        "stop dont stop my music"
+        "stop dont stop my music",
+        "go on",
+        "unmute",
+        "let's hear it again",
+        "play it again",
+        "pick up where we left off",
+        "start the track back up"
     ],
-    "volumeUp":[
+    "VolumeUp": [
         "turn up the volume",
         "turn the volume up",
         "make it louder",
@@ -43,9 +54,14 @@
         "put the volume up",
         "crank up the volume",
         "turn up the audio",
-        "bump up the volume"
+        "bump up the volume",
+        "pump it up",
+        "turn it up a bit",
+        "max volume",
+        "higher volume",
+        "can you make it louder"
     ],
-    "volumeDown":[
+    "VolumeDown": [
         "turn down the volume",
         "turn the volume down",
         "make it quieter",
@@ -60,17 +76,76 @@
         "put the volume down",
         "turn down the audio",
         "lower the sound",
-        "quieter please"
+        "quieter please",
+        "turn it down a bit",
+        "lower it",
+        "too loud",
+        "soften the sound",
+        "bring the volume down"
     ],
-    "other": [
+    "NextSong": [
+        "next song",
+        "skip this track",
+        "next track",
+        "skip",
+        "play next",
+        "skip song",
+        "next one",
+        "play the next track",
+        "can you skip this",
+        "jump to the next song",
+        "forward",
+        "skip forward",
+        "play the next one",
+        "advance track"
+    ],
+    "PrevSong": [
+        "previous track",
+        "prev track",
+        "go back",
+        "last track",
+        "play previous",
+        "previous song",
+        "last song",
+        "go back a track",
+        "play the last song",
+        "rewind track",
+        "previous one",
+        "play the previous track",
+        "back one track"
+    ],
+    "Mute": [
+        "mute",
+        "mute the audio",
+        "mute the volume",
+        "silence",
+        "silence the music",
+        "turn off the sound",
+        "mute sound",
+        "shut off the volume",
+        "make it silent",
+        "mute the computer",
+        "cut the sound",
+        "stop the sound"
+    ],
+    "Unmute": [
+        "unmute",
+        "unmute the audio",
+        "unmute the volume",
+        "turn on the sound",
+        "unmute sound",
+        "bring back the sound",
+        "unmute the music",
+        "turn the sound back on",
+        "restore audio",
+        "unmute the computer",
+        "sound on"
+    ],
+    "Other": [
         "hello",
         "what is the weather",
         "open my browser",
         "tell me a joke",
-        "turn up the volume",
-        "turn down the volume",
-        "next song",
-        "skip this track",
         "what song is this",
         "i like this music",
         "set a timer",
@@ -83,6 +158,10 @@
         "don't stop playing",
         "do not stop the music",
         "don't resume the music",
-        "do not play the music"
+        "do not play the music",
+        "shuffle my playlist",
+        "repeat this song",
+        "add this to my favorites",
+        "who sings this"
     ]
 }

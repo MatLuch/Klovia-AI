@@ -147,5 +147,9 @@ torch.save({
     "hidden_size": 32,
 }, save_path)
 
+# Print ammount of params
+total_params = sum(p.numel() for p in model.parameters())
+print(f"Total trainable parameters: {total_params}")
+
 # Display the location of the saved model.
 print(f"\nModel saved to: {save_path}")

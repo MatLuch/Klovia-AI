@@ -1,9 +1,13 @@
 from Media_And_Volume.Volume import *
+from Media_And_Volume.MediaControls import * 
 from AI_Training.TestRun2 import ModelAnswer
 
 command_map = {
-    "volumeUp": Increase_Volume,
-    "volumeDown" : Decrease_Volume
+    "VolumeUp": Increase_Volume,
+    "VolumeDown" : Decrease_Volume,
+    "PlayPause" : Play_Pause,
+    "NextSong" : Next_Track,
+    "PrevSong" : Prev_Track
 }
 
 while True:
@@ -15,6 +19,6 @@ while True:
     out = ModelAnswer(text)
 
     if out in command_map: 
-        command_map[out](10) # will execute function directly 
+        command_map[out]()
     else:
         print("Command not found")

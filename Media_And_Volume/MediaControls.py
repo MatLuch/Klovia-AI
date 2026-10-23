@@ -4,11 +4,31 @@ import pyautogui
 vol = AudioUtilities.GetSpeakers().EndpointVolume
 
 def Mute(): 
-    vol.setMute(1, None)
-
+    try:
+        vol.setMute(1, None)
+    except Exception:
+        return None 
+    
 def Unmute():
-    vol.setMute(0, None)
-
-def Media_Control(action):
-    if action in ['playpause', 'next', 'prev']:
-        pyautogui.press(action + 'track' if action != 'playpause' else 'playpause')
+    try:
+        vol.setMute(0, None)
+    except Exception:
+        return None
+    
+def Play_Pause():
+    try: 
+        pyautogui.press('playpause')
+    except Exception:
+        return None
+    
+def Next_Track():
+    try:
+        pyautogui.press('nexttrack')
+    except Exception:
+        return None
+    
+def Prev_Track():
+    try:
+        pyautogui.press('prevtrack')
+    except Exception:
+        return None
