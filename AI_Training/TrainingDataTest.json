@@ -126,7 +126,8 @@
         "make it silent",
         "mute the computer",
         "cut the sound",
-        "stop the sound"
+        "stop the sound", 
+        "Can you mute please"
     ],
     "Unmute": [
         "unmute",
@@ -139,7 +140,9 @@
         "turn the sound back on",
         "restore audio",
         "unmute the computer",
-        "sound on"
+        "sound on",
+        "Can you unmute please"
+
     ],
     "Other": [
         "hello",

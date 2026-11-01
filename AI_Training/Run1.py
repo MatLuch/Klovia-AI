@@ -5,13 +5,10 @@ from torch import nn
 
 # Load the saved model and its training information.
 path = (
-    Path.home()
-    / "Documents"
-    / "Klovia"
-    / "AI_Training"
-    / "Training_test"
+    Path(__file__).resolve().parent
     / "music_model.pth"
 )
+
 saved = torch.load(path, map_location="cpu", weights_only=True)
 
 # Retrieve the vocabulary and command labels used during training.

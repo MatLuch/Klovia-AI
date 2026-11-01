@@ -18,7 +18,7 @@ with open(data_path, "r", encoding="utf-8") as file:
 
 # Create the folder where the trained model will be saved.
 # If the folder already exists, it will not be created again.
-save_folder = Path.home() / "Documents" / "Klovia" / "AI_Training" / "Training_test"
+save_folder = Path.home() / "Documents" / "Klovia" / "AI_Training"
 save_folder.mkdir(parents=True, exist_ok=True)
 
 # Define the full path for the saved PyTorch model.
