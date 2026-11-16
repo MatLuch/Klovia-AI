@@ -97,7 +97,8 @@
         "forward",
         "skip forward",
         "play the next one",
-        "advance track"
+        "advance track", 
+        "Next one"
     ],
     "PrevSong": [
         "previous track",
