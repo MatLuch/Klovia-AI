@@ -1,10 +1,11 @@
 from Media_And_Volume.Volume import *
 from Media_And_Volume.MediaControls import *
 from AI_Training.Run1 import ModelAnswer
+from Tools.numberLocator import numLocate
 
 command_map = {
-    "VolumeUp": lambda: Increase_Volume(text),
-    "VolumeDown": lambda: Decrease_Volume(text),
+    "VolumeUp": lambda: Increase_Volume(loc),
+    "VolumeDown": lambda: Decrease_Volume(loc),
     "PlayPause": Play_Pause,
     "NextSong": Next_Track,
     "PrevSong": Prev_Track,
@@ -12,14 +13,16 @@ command_map = {
     "Unmute": Unmute
 }
 
-while True:
-    text = input("Enter your text: ").strip()
+text = ""
 
-    if text.lower() == "exit":
-        break
+while text != "-1" or "stop":
+    text = input("Enter the text you wish to send: ").strip()
 
     out = ModelAnswer(text)
-    print("Detected command:", out)
+    loc = numLocate(text)
+
+    print("the model said:", out)
+    print("The number found is:", loc)
 
     if out in command_map:
         command_map[out]()
