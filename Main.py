@@ -2,12 +2,12 @@ import speech_recognition as sr
 from Media_And_Volume.Volume import *
 from Media_And_Volume.MediaControls import *
 from AI_Training.Run1 import ModelAnswer
-
+from Tools.numberLocator import numLocate
 recognizer = sr.Recognizer()
 
 command_map = {
-    "VolumeUp": lambda: Increase_Volume(text),
-    "VolumeDown": lambda: Decrease_Volume(text),
+    "VolumeUp": lambda: Increase_Volume(amount),
+    "VolumeDown": lambda: Decrease_Volume(amount),
     "PlayPause": Play_Pause,
     "NextSong": Next_Track,
     "PrevSong": Prev_Track,
@@ -30,11 +30,14 @@ with sr.Microphone() as source:
             text = recognizer.recognize_google(audio)
 
             out = ModelAnswer(text)
+            amount = numLocate(text)
+
             print("You said:", text, "\n")
 
             if out in command_map: 
                 command_map[out]()
-                print("Detected command: ", out, "\n")
+                print("Detected command:" , out)
+                print("Detected number:", amount)
 
         except sr.UnknownValueError:
             print("Didn't catch that. Try again.")
