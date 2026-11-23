@@ -1,8 +1,9 @@
 from pycaw.pycaw import AudioUtilities
 
+# Creates a control object for the computers primary audio
 vol = AudioUtilities.GetSpeakers().EndpointVolume
 
-## Function to set the volume to a exact ammount 
+# Function to set the volume to a exact ammount 
 def Set_Volume(input):
     try: 
         input /= 100  
@@ -12,7 +13,7 @@ def Set_Volume(input):
     except Exception:
         return None
 
-## Function to Increase the volume to a exact ammount
+# Function to Increase the volume to a exact ammount
 def Increase_Volume(input):
     try: 
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
@@ -23,7 +24,7 @@ def Increase_Volume(input):
     except Exception: 
         return None 
 
-## Function to Decrease the volume by a exact ammount 
+# Function to Decrease the volume by a exact ammount 
 def Decrease_Volume(input):
     try: 
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
