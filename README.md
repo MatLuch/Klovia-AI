@@ -1,6 +1,6 @@
                     # Klovia
 
-Klovia is a Python voice assistant I’m making for Windows. Basically, I wanted to control my music without having to click around or reach for the keyboard. It’s still a work in progress, but it can already play or pause music, skip songs, go back a track, mute or unmute, and change the system volume.
+Klovia is a Python voice assistant for Windows. I want to be able to control my laptop with my voice such as music, windows, apps and more. It’s still a work in progress, but it can already play or pause music, skip songs, go back a track, mute or unmute, and change the system volume.
 
 ## stuff you can say
 
@@ -15,7 +15,7 @@ Play and pause use the same media key, so what happens depends on whether music 
 
 ## how the local AI works
 
-Klovia uses Google speech recognition to turn what I say into text. Then a small PyTorch model runs on my computer and figures out which command I meant. I train it on example phrases from a JSON file, so things like “skip this song” and “next track” both point to the same command.
+Klovia uses Google speech recognition to turn audio into text. Then a ultra small PyTorch model runs on my computer and figures out which command I meant. I train it on example phrases from a JSON file, so things like “skip this song” and “next track” both point to the same command, i also train it on more niche things so most of the time it will pick it up. I will contuine to improve the data.
 
 The model counts the words it recognizes from training and uses those counts to pick a command. The training script saves the model as `music_model.pth`. Klovia uses `PyAutoGUI` to press the media keys and `pycaw` to control the Windows volume.
 
@@ -33,6 +33,6 @@ Klovia spends about a second checking the background noise before it starts list
 
 ## what I’m still working on
 
-I still want to add more training phrases and make volume commands like “turn it up a bit” work without having to say a specific number.
+I want to add and improve the training data so it can be more accurate. 
 
-When I find a phrase Klovia keeps getting wrong, I can add it to the JSON and retrain the model. That’s how I can teach it more ways to ask for the same thing.
+I am also currently fixing a bunch of bugs
