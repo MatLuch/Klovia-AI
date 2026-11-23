@@ -23,7 +23,7 @@ The training file has 306 examples across seven commands and an `Other` category
 
 ## how to run it
 
-Open a terminal in the full project folder on Windows. You’ll need the Python dependencies installed, the trained model in place, a mic, and internet for speech recognition. Then run
+Open a terminal in the full project folder on Windows. You’ll need the Python dependencies installed, the trained model in place, a mic, and internet for speech recognition. Then run it
 
 ```bash
 python Main.py
