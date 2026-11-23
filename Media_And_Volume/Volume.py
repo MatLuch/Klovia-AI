@@ -16,6 +16,7 @@ def Set_Volume(input):
 # Function to Increase the volume to a exact ammount
 def Increase_Volume(input):
     try: 
+        if input == None: input = 10
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
         NewPrecent = currVolume + float(input)
 
@@ -27,6 +28,7 @@ def Increase_Volume(input):
 # Function to Decrease the volume by a exact ammount 
 def Decrease_Volume(input):
     try: 
+        if input == None: input = 10 
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
         NewPrecent = currVolume - float(input)
 

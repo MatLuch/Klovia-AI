@@ -7,14 +7,14 @@ vol = AudioUtilities.GetSpeakers().EndpointVolume
 # Function to Mute the audio
 def Mute(): 
     try:
-        vol.setMute(1, None)
+        vol.SetMute(1, None)
     except Exception:
         return None 
 
 # Function to Unmute the audio 
 def Unmute():
     try:
-        vol.setMute(0, None)
+        vol.SetMute(0, None)
     except Exception:
         return None
 
