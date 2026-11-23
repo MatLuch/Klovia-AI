@@ -79,7 +79,8 @@
         "turn up the volume without skipping the song",
         "increase the volume a little",
         "turn teh volume up",
-        "volum up"
+        "volum up",
+        "Um turn it up by 80"
     ],
     "VolumeDown": [
         "turn down the volume",
@@ -95,6 +96,7 @@
         "turn the sound down",
         "put the volume down",
         "turn down the audio",
+        "Um turn it down by 50",
         "lower the sound",
         "quieter please",
         "turn it down a bit",

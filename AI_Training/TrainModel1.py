@@ -22,7 +22,7 @@ save_folder = Path.home() / "Documents" / "Klovia" / "AI_Training"
 save_folder.mkdir(parents=True, exist_ok=True)
 
 # Define the full path for the saved PyTorch model.
-save_path = save_folder / "music_model.pth"
+save_path = Path(__file__).resolve().with_name("music_model.pth")
 
 
 def tokenize(text):
