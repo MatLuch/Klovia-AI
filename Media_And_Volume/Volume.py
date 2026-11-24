@@ -18,7 +18,9 @@ def Increase_Volume(input):
     try: 
         if input == None: input = 10
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
-        NewPrecent = currVolume + float(input)
+
+        if currVolume + float(input) >= 100: NewPrecent = 100
+        else: NewPrecent = currVolume + float(input)
 
         vol.SetMasterVolumeLevelScalar(NewPrecent / 100.0, None) 
 
@@ -30,7 +32,9 @@ def Decrease_Volume(input):
     try: 
         if input == None: input = 10 
         currVolume = vol.GetMasterVolumeLevelScalar() * 100
-        NewPrecent = currVolume - float(input)
+
+        if currVolume - float(input) <= 0: NewPrecent = 0
+        else: NewPrecent = currVolume - float(input)
 
         vol.SetMasterVolumeLevelScalar(NewPrecent / 100.0, None) 
 
