@@ -10,6 +10,7 @@ def Set_Brightness(input):
 
 def Increase_Brightness(input):
     try:
+        if input == None: input = 10
         input = float(input)
         currentBrightness = sbc.get_brightness()[0]
 
@@ -23,11 +24,12 @@ def Increase_Brightness(input):
 
 def Decrease_Brightness(input):
     try:
+        if input == None: input = 10
         input = float(input)
         currentBrightness = sbc.get_brightness()[0]
 
         if currentBrightness - input <= 0: newBright = 0
-        else: newBright = currentBrightness + input
+        else: newBright = currentBrightness - input
     
         sbc.set_brightness(newBright)
 
