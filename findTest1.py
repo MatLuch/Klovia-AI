@@ -1,4 +1,4 @@
-from AI_Training.Run1 import ModelAnswer
+from AI_Training.Run1 import *
 from Media_And_Volume.MediaControls import *
 from Media_And_Volume.Volume import *
 
@@ -8,7 +8,7 @@ while True:
   text = input("Enter command: ")
   
   # Get the answer from your trained model function
-  response = ModelAnswer(text)
+  response = NameFinderModelAnswer(text)
   
   if response == "exit":
       print("Exiting")
