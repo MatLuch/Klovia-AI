@@ -6,6 +6,7 @@ from Tools.numberLocator import numLocate
 command_map = {
     "VolumeUp": lambda: Increase_Volume(loc),
     "VolumeDown": lambda: Decrease_Volume(loc),
+    "SetVolume" : lambda : Set_Volume(loc),
     "PlayPause": Play_Pause,
     "NextSong": Next_Track,
     "PrevSong": Prev_Track,

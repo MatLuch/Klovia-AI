@@ -6,10 +6,14 @@ vol = AudioUtilities.GetSpeakers().EndpointVolume
 # Function to set the volume to a exact ammount 
 def Set_Volume(input):
     try: 
-        input /= 100  
+        input = float(input)
+        if input >= 100: input = 100
+        if input <= 0: input = 0
+
+        input /= 100
 
         vol.SetMasterVolumeLevelScalar(input, None)  
-
+        
     except Exception:
         return None
 
