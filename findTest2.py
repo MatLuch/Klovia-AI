@@ -15,8 +15,9 @@ command_map = {
 
 text = ""
 
-while text != "-1" or "stop":
+while True:
     text = input("Enter the text you wish to send: ").strip()
+    if text in ("-1", "stop"): break
 
     out = ModelAnswer(text)
     loc = numLocate(text)
