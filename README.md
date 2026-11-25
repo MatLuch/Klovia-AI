@@ -1,4 +1,4 @@
-                    # Klovia
+                    # Klovia: Still in its very phase and test stage
 
 Klovia is a Python voice assistant for Windows. I want to be able to control my laptop with my voice such as music, windows, apps and more. It’s still a work in progress, but it can already play or pause music, skip songs, go back a track, mute or unmute, and change the system volume.
 
