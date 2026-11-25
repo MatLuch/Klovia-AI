@@ -2,6 +2,7 @@
 import speech_recognition as sr
 from Media_And_Volume.Volume import *
 from Media_And_Volume.MediaControls import *
+from Media_And_Volume.Brightness import * 
 from AI_Training.Run1 import ModelAnswer
 from Tools.numberLocator import numLocate
 recognizer = sr.Recognizer()
@@ -10,12 +11,17 @@ recognizer = sr.Recognizer()
 command_map = {
     "VolumeUp": lambda: Increase_Volume(amount),
     "VolumeDown": lambda: Decrease_Volume(amount),
+    "SetVolume" : lambda : Set_Volume(amount),
+    "IncreaseBrightness" : lambda : Increase_Brightness(amount), 
+    "DecreaseBrightness" : lambda : Decrease_Brightness(amount),
+    "SetBrightness" : lambda : Set_Brightness(amount), 
     "PlayPause": Play_Pause,
     "NextSong": Next_Track,
     "PrevSong": Prev_Track,
     "Mute": Mute,
     "Unmute": Unmute
 }
+
 
 # Microphone setup
 with sr.Microphone() as source:
