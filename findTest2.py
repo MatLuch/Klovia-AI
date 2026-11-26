@@ -1,7 +1,7 @@
 from Media_And_Volume.Volume import *
 from Media_And_Volume.MediaControls import *
 from Media_And_Volume.Brightness import * 
-from AI_Training.Run1 import ModelAnswer
+from AI_Training.Run1 import GeneralModelAnswer
 from Tools.numberLocator import numLocate
 
 command_map = {
@@ -24,7 +24,7 @@ while True:
     text = input("Enter the text you wish to send: ").strip()
     if text in ("-1", "stop"): break
 
-    out = ModelAnswer(text)
+    out = GeneralModelAnswer(text)
     loc = numLocate(text)
 
     print("the model said:", out)

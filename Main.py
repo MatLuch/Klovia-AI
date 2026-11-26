@@ -3,7 +3,7 @@ import speech_recognition as sr
 from Media_And_Volume.Volume import *
 from Media_And_Volume.MediaControls import *
 from Media_And_Volume.Brightness import * 
-from AI_Training.Run1 import ModelAnswer
+from AI_Training.Run1 import GeneralModelAnswer
 from Tools.numberLocator import numLocate
 recognizer = sr.Recognizer()
 
@@ -38,7 +38,7 @@ with sr.Microphone() as source:
             print("Recognizing...")
             text = recognizer.recognize_google(audio) # Sends audio to google to get turned into text 
 
-            out = ModelAnswer(text) # Variable for the model text 
+            out = GeneralModelAnswer(text) # Variable for the model text 
             amount = numLocate(text) # Variable for the first found number/s
 
             print("You said:", text, "\n")
