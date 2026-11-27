@@ -1,4 +1,4 @@
-                    # Klovia: Still in its very phase and test stage
+# Klovia: Still in its very phase and test stage
 
 Klovia is a Python voice assistant for Windows. I want to be able to control my laptop with my voice such as music, windows, apps and more. It’s still a work in progress, but it can already play or pause music, skip songs, go back a track, mute or unmute, and change the system volume.
 
@@ -27,12 +27,3 @@ Open a terminal in the full project folder on Windows. You’ll need the Python 
 
 ```bash
 python Main.py
-```
-
-Klovia spends about a second checking the background noise before it starts listening for commands. The terminal shows what it heard and, when it matches a command, which one it picked and any number it found. That helps me see if it heard me wrong or picked the wrong command. Press `Ctrl+C` to stop it.
-
-## what I’m still working on
-
-I want to add and improve the training data so it can be more accurate. 
-
-I am also currently fixing a bunch of bugs
